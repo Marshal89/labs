@@ -5,6 +5,7 @@
  */
 package lab7;
 
+import Exceptions.TryCatch;
 import Mar212021.Example;
 
 /**
@@ -26,6 +27,8 @@ public class Lab7 {
         String[] head = lines[0].split("-");
         Student[] theStudents = new Student[lines.length - 1];
 
+        //try the exceptions
+        //new TryCatch();
         for (int index = 1; index < lines.length; ++index) {
             String[] information = lines[index].split("-");
 
@@ -44,22 +47,18 @@ public class Lab7 {
 
             theStudents[index - 1] = aStudent;
         }
-        
+
         //print first student grade
         System.out.println(theStudents[0].highestGrade());
         System.out.println(theStudents[0].lowestGrade());
-        
+
         /**
-         *              ##  To Do   ##
-         * 1. loop for all students to get a grade for a specific
-         *      subject such as Chemistry
-         * 2. Display grades along with students name in ascending order
-         *      output should look like the following lines
-         *      Hani Althubaiti     90
-         *      Hassan Alaiafi      100
-         *      Salem Alslaimi      100
+         * ## To Do ## 1. loop for all students to get a grade for a specific
+         * subject such as Chemistry 2. Display grades along with students name
+         * in ascending order output should look like the following lines Salem
+         * Alslaimi 8 Hassan Alaiafi 10 Hani Althubaiti 90
+         *
          */
-         
     }
 
 }
